@@ -1,0 +1,21 @@
+class PointK 
+{ int x, y;
+   //Конструкторы часто выделяются наличием одинакового имени с именем класса
+   //Здесь коструктор объявляет переменные (атрибуты) класса PointK
+  PointK(int x, int y) 
+  {  this.x = x;
+     this.y = y;
+  }
+}
+class TwoPointsInitK 
+{  public static void main(String args[]) 
+   {//Создание объекта класса PointK и присвоение значений переменным созданного объекта 
+    //вместо 
+   //PointK p = new PointK();
+   //p.init(10,20);
+    PointK p1 = new PointK(10,20);		
+    PointK p2 = new PointK(42,99);		
+    System.out.println("x = " + p1.x + " y = " + p1.y);		
+    System.out.println("x = " + p2.x + " y = " + p2.y);	
+   } 
+}
